@@ -1,0 +1,47 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    height: 600px;
+    width: 600px;
+    background-color: bisque;
+    margin-bottom: 30px;
+}
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.purple {
+    background-color: purple;
+}
+.pink {
+    background-color: pink;
+}
+.orange {
+    background-color: orange;
+}
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-1 .inner-container:nth-child(1) {
+    width: 100%;
+    height: calc(100% / 3);
+    display: flex;
+}
+.container-1 .inner-container:nth-child(1) .item:nth-child(1){
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+.container-1 .inner-container:nth-child(1) .item:nth-child(2){
+    width: calc(100% / 3 * 2);
+    height: 100%;
+}
